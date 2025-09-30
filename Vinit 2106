@@ -1,0 +1,18 @@
+import numpy as np
+
+# Function to integrate
+f = lambda x: np.exp(x)
+
+# Integration limits
+a, b = 0, 1
+n = 4
+h = (b - a) / n  # step size
+
+# Trapezoidal Rule
+x_values = np.linspace(a, b, n + 1)
+y_values = f(x_values)
+
+# Apply formula
+integral = (h/2) * (y_values[0] + 2*sum(y_values[1:-1]) + y_values[-1])
+
+print("Approximate value of integral:", integral)
