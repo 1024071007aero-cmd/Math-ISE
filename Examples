@@ -1,0 +1,21 @@
+
+---
+
+# 3) Example problem files
+
+## problems/approx_trapezoid/PROBLEM.md
+```markdown
+# Approximate integral using the Trapezoidal Rule
+
+**Problem:** Approximate the integral
+\[
+\int_{0}^{1} e^x \, dx
+\]
+using the Trapezoidal Rule with \(n = 4\) subintervals.
+
+**Goal:** Provide a Python implementation and a short explanation of the steps.
+
+**Expected steps**
+1. Partition [0,1] into n = 4 equal subintervals.
+2. Compute the trapezoidal sum.
+3. Show the approximate numeric value and compare to exact value \(e - 1\).
